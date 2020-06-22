@@ -1,11 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import { ViaCepComponent } from './via-cep/via-cep/via-cep.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ViaCepComponent
   ],
   imports: [
     BrowserModule
@@ -14,3 +17,4 @@ import { AppComponent } from './app.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
