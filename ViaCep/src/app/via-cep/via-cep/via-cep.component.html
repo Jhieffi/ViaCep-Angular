@@ -1,3 +1,11 @@
-<p>
-  via-cep works!
-</p>
+<div class="input-confirmation">
+    <input placeholder="cep" (input)="cepInformed = $event.target.value" type="text" />
+    <button (click)="getCep()">Buscar</button>
+</div>
+
+<div>
+    <ul>
+        <li>{{ cep.logradouro }}</li>
+        <li>{{ cep.localidade }}</li>
+    </ul>
+</div>
