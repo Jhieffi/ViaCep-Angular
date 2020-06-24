@@ -1,11 +1,11 @@
-<div class="input-confirmation">
-    <input placeholder="cep" (input)="cepInformed = $event.target.value" type="text" />
-    <button (click)="getCep()">Buscar</button>
-</div>
-
-<div>
-    <ul>
-        <li>{{ cep.logradouro }}</li>
-        <li>{{ cep.localidade }}</li>
-    </ul>
-</div>
+<form>
+    <div>
+        <input placeholder="Digite seu cep" class="form-control" (input)="cepInformed = $event.target.value" type="text" />
+    </div>
+    <div>
+        <button type="button" class="btn btn-outline-dark" (click)="getCep()">Buscar</button>
+    </div>
+    <div class="cep-info-list">
+        {{ cep.cep }}, {{ cep.logradouro }}, {{ cep.bairro }}, {{ cep.localidade }}
+    </div>
+</form>

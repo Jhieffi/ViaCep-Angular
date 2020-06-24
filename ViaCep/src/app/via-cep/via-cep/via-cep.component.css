@@ -1,0 +1,21 @@
+form {
+    margin: 70px auto;
+    background: #27AE60;
+    width: 347px;
+    text-align: center;
+    padding: 40px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.cep-info-list {
+    font-weight: bold;
+    margin-top: 15px;
+}
